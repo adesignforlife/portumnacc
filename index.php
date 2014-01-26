@@ -20,6 +20,7 @@
       <div id="content">
       </div>
       <div id="footer">
+        <p>This site is under construction - as you can see.</p>
       </div>
     </div>
   </div>
