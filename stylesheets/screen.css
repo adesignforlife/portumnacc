@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -65,4 +67,18 @@ a img {
 /* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/**
+ *  Colours
+ **/
+/**
+ *  Mixins
+ **/
+/**
+ *  Fonts
+ **/
+/* line 37, ../sass/screen.scss */
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }

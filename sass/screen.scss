@@ -4,3 +4,36 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+
+/**
+ *  Colours
+ **/
+
+$blue:      #003366; // the main blue
+
+/**
+ *  Mixins
+ **/
+
+/**
+ *  Fonts
+ **/
+
+// Open Sans - main font on the website
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// Oswald - used for headings, etc - suggested by "pairings" on Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+// Font Sets
+
+// Open Sans
+$open-sans:   'Open Sans', Arial, Helvetica, sans-serif;
+
+// Oswald
+$oswald:      Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
+
+
+body {
+  font-family: $open-sans;
+}
