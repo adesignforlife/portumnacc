@@ -5,12 +5,22 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "zen";
+
+/**
+ * Zen Grids
+ **/
+
+$zen-column-count: 12;
+$zen-gutter-width: 10px;
 
 /**
  *  Colours
  **/
 
-$blue:      #003366; // the main blue
+$black:     #000;       // standard black
+$white:     #fff;       // standard white
+$blue:      #003366;    // the main blue
 
 /**
  *  Mixins
@@ -36,4 +46,14 @@ $oswald:      Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
 
 body {
   font-family: $open-sans;
+}
+
+#main {
+   @include zen-grid-item(12,1);
+}
+
+#footer {
+  background: $blue;
+  color: $white;
+  @include zen-grid-item(6,4);
 }
