@@ -32,6 +32,8 @@ $bg:        lighten($blue, 60%); // main background colour
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 // Oswald - used for headings, etc - suggested by "pairings" on Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+// Bowlby One SC // Used for main site heading
+@import url(http://fonts.googleapis.com/css?family=Bowlby+One+SC);
 
 // Font Sets
 
@@ -41,10 +43,15 @@ $open-sans:   'Open Sans', Arial, Helvetica, sans-serif;
 // Oswald
 $oswald:      Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
 
+// Bowlby One SC
+$bowlby:    'Bowlby One SC', $oswald;
+
 html {
   background: $bg;
 }
-h1,
+h1 {
+  font-family: $bowlby;
+}
 h2,
 h3,
 h4,
@@ -60,19 +67,19 @@ body {
 
 #page-wrapper {
   background: $bg;
+  margin-top: 1em;
 }
 
 #main-wrapper {
   background: $blue;
-  margin-top: 1em;
 }
+
 #header {
   background: $yellow;
   //@include border-radius(1em 1em 0 0);
   h1 {
     color: $bg;
-    font-size: 4rem;
-    margin-top: -1rem;
+    font-size: 3.8rem;
     text-transform: uppercase;
     text-align: center;
   }

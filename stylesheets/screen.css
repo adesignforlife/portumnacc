@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Bowlby+One+SC);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -73,21 +74,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * Zen Grids
  **/
 /* line 8, ../sass/_layout.scss */
+#page-wrapper,
 #main-wrapper {
   max-width: 960px;
   margin: 0 auto;
 }
 /* line 45, ../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-#main-wrapper:before, #main-wrapper:after {
+#page-wrapper:before, #page-wrapper:after,
+#main-wrapper:before,
+#main-wrapper:after {
   content: "";
   display: table;
 }
 /* line 50, ../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+#page-wrapper:after,
 #main-wrapper:after {
   clear: both;
 }
 
-/* line 14, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
 #header {
   float: left;
   width: 100%;
@@ -102,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 17, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 #menu {
   clear: left;
   float: left;
@@ -118,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 21, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 #slider {
   clear: left;
   float: left;
@@ -134,7 +139,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 26, ../sass/_layout.scss */
+/* line 27, ../sass/_layout.scss */
 #main .main-content {
   float: left;
   width: 75%;
@@ -149,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
   clear: both;
 }
-/* line 30, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
 #main .main-aside {
   float: left;
   width: 25%;
@@ -164,11 +169,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 35, ../sass/_layout.scss */
 #footer {
   clear: left;
 }
-/* line 36, ../sass/_layout.scss */
+/* line 37, ../sass/_layout.scss */
 #footer .footer-block-1 {
   float: left;
   width: 33.33333%;
@@ -182,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 39, ../sass/_layout.scss */
+/* line 40, ../sass/_layout.scss */
 #footer .footer-block-2 {
   float: left;
   width: 33.33333%;
@@ -196,7 +201,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 42, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
 #footer .footer-block-3 {
   float: left;
   width: 33.33333%;
@@ -220,13 +225,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *  Fonts
  **/
-/* line 44, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 html {
   background: #99ccff;
 }
 
-/* line 47, ../sass/screen.scss */
-h1,
+/* line 52, ../sass/screen.scss */
+h1 {
+  font-family: "Bowlby One SC", Oswald, "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* line 55, ../sass/screen.scss */
 h2,
 h3,
 h4,
@@ -235,48 +244,47 @@ h6 {
   font-family: Oswald, "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #cccccc;
   line-height: 1.25;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #page-wrapper {
   background: #99ccff;
-}
-
-/* line 65, ../sass/screen.scss */
-#main-wrapper {
-  background: #003366;
   margin-top: 1em;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
+#main-wrapper {
+  background: #003366;
+}
+
+/* line 77, ../sass/screen.scss */
 #header {
   background: #fff10d;
 }
-/* line 72, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 #header h1 {
   color: #99ccff;
-  font-size: 4rem;
-  margin-top: -1rem;
+  font-size: 3.8rem;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #menu {
   background: #fff10d;
   padding: 1em 0;
 }
-/* line 83, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #menu .menu-item {
   display: inline-block;
   padding: 0 1rem;
 }
-/* line 86, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #menu .menu-item a {
   color: #003366;
   text-decoration: none;

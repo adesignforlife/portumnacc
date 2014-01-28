@@ -7,10 +7,10 @@
 </head>
 <body>
   <div id="page-wrapper">
+    <div id="main-wrapper">
       <div id="header">
         <p><h1>Portumna Cycling Club</h1></p>
       </div>
-      <div id="main-wrapper">
       <div id="menu">
         <ul>
           <li class="menu-item"><a href="/">Home</a></li>
