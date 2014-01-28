@@ -18,6 +18,7 @@ $black:     #000;       // standard black
 $white:     #fff;       // standard white
 $blue:      #003366;    // the main blue
 $yellow:    #FFF10D;    // the main yellow
+$bg:        lighten($blue, 60%); // main background colour
 
 /**
  *  Mixins
@@ -41,7 +42,7 @@ $open-sans:   'Open Sans', Arial, Helvetica, sans-serif;
 $oswald:      Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
 
 html {
-  background: $blue;
+  background: $bg;
 }
 h1,
 h2,
@@ -53,12 +54,39 @@ h6 {
 }
 body {
   font-family: $open-sans;
+  color: darken($white,20%);
+  line-height: 1.25;
 }
 
 #page-wrapper {
-  background: $blue;
+  background: $bg;
 }
 
 #main-wrapper {
-  background: lighten($yellow,20%);
+  background: $blue;
+  margin-top: 1em;
+}
+#header {
+  background: $yellow;
+  //@include border-radius(1em 1em 0 0);
+  h1 {
+    color: $bg;
+    font-size: 4rem;
+    margin-top: -1rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+#menu {
+  background: $yellow;
+  padding: 1em 0;
+  .menu-item {
+    display: inline-block;
+    padding: 0 1rem;
+    a {
+      color: $blue;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
 }

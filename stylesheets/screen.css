@@ -88,12 +88,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 14, ../sass/_layout.scss */
-#menu {
+#header {
+  float: left;
   width: 100%;
-  background: red;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
-/* line 20, ../sass/_layout.scss */
+/* line 17, ../sass/_layout.scss */
+#menu {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 21, ../sass/_layout.scss */
+#slider {
+  clear: left;
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 26, ../sass/_layout.scss */
 #main .main-content {
   float: left;
   width: 75%;
@@ -108,7 +149,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
   clear: both;
 }
-/* line 24, ../sass/_layout.scss */
+/* line 30, ../sass/_layout.scss */
 #main .main-aside {
   float: left;
   width: 25%;
@@ -123,11 +164,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 29, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 #footer {
   clear: left;
 }
-/* line 31, ../sass/_layout.scss */
+/* line 36, ../sass/_layout.scss */
 #footer .footer-block-1 {
   float: left;
   width: 33.33333%;
@@ -141,7 +182,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 34, ../sass/_layout.scss */
+/* line 39, ../sass/_layout.scss */
 #footer .footer-block-2 {
   float: left;
   width: 33.33333%;
@@ -155,7 +196,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
   word-wrap: break-word;
 }
-/* line 37, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
 #footer .footer-block-3 {
   float: left;
   width: 33.33333%;
@@ -179,12 +220,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *  Fonts
  **/
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 html {
-  background: #003366;
+  background: #99ccff;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 h1,
 h2,
 h3,
@@ -194,17 +235,50 @@ h6 {
   font-family: Oswald, "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #cccccc;
+  line-height: 1.25;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 #page-wrapper {
-  background: #003366;
+  background: #99ccff;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #main-wrapper {
-  background: #fff773;
+  background: #003366;
+  margin-top: 1em;
+}
+
+/* line 69, ../sass/screen.scss */
+#header {
+  background: #fff10d;
+}
+/* line 72, ../sass/screen.scss */
+#header h1 {
+  color: #99ccff;
+  font-size: 4rem;
+  margin-top: -1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 80, ../sass/screen.scss */
+#menu {
+  background: #fff10d;
+  padding: 1em 0;
+}
+/* line 83, ../sass/screen.scss */
+#menu .menu-item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+/* line 86, ../sass/screen.scss */
+#menu .menu-item a {
+  color: #003366;
+  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -11,11 +11,17 @@ $zen-gutter-width: 10px;
   @include zen-grid-container;
 }
 
-#menu {
-  width: 100%;
-  background: red;
+#header {
+  @include zen-grid-item(12,1);
 }
-
+#menu {
+  @include zen-clear();
+  @include zen-grid-item(12,1);
+}
+#slider {
+  @include zen-clear();
+  @include zen-grid-item(9,1);
+}
 #main {
   .main-content {
       @include zen-grid-item(9,1);
@@ -25,7 +31,6 @@ $zen-gutter-width: 10px;
       @include zen-grid-item(3,10);
   }
 }
-
 #footer {
   @include zen-clear();
   .footer-block-1 {
