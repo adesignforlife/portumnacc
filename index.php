@@ -9,7 +9,7 @@
   <div id="page-wrapper">
     <div id="main-wrapper">
       <div id="header">
-        <p>Portumna Cycling Club</p>
+        <p><h1>Portumna Cycling Club</h1></p>
       </div>
       <div id="menu">
         <ul>

@@ -43,6 +43,14 @@ $oswald:      Oswald, 'Open Sans', Arial, Helvetica, sans-serif;
 html {
   background: $blue;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $oswald;
+}
 body {
   font-family: $open-sans;
 }

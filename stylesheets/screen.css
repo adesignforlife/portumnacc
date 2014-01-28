@@ -185,16 +185,26 @@ html {
 }
 
 /* line 46, ../sass/screen.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald, "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* line 54, ../sass/screen.scss */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #page-wrapper {
   background: #003366;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #main-wrapper {
   background: #fff773;
 }
