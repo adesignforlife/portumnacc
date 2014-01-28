@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
 <body>
-  <div id-"page-wrapper">
+  <div id="page-wrapper">
     <div id="main-wrapper">
       <div id="header">
         <p>Portumna Cycling Club</p>

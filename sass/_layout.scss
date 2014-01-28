@@ -1,0 +1,40 @@
+/**
+ * Zen Grids
+ **/
+
+$zen-column-count: 12;
+$zen-gutter-width: 10px;
+
+#main-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  @include zen-grid-container;
+}
+
+#menu {
+  width: 100%;
+  background: red;
+}
+
+#main {
+  .main-content {
+      @include zen-grid-item(9,1);
+      clear: both;
+    }
+  .main-aside {
+      @include zen-grid-item(3,10);
+  }
+}
+
+#footer {
+  @include zen-clear();
+  .footer-block-1 {
+    @include zen-grid-item(4,1);
+  }
+  .footer-block-2 {
+    @include zen-grid-item(4,5);
+  }
+  .footer-block-3 {
+    @include zen-grid-item(4,9);
+  }
+}

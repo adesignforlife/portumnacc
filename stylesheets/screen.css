@@ -72,25 +72,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  * Zen Grids
  **/
-/**
- *  Colours
- **/
-/**
- *  Mixins
- **/
-/**
- *  Fonts
- **/
-/* line 47, ../sass/screen.scss */
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+/* line 8, ../sass/_layout.scss */
+#main-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 45, ../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+#main-wrapper:before, #main-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+#main-wrapper:after {
+  clear: both;
 }
 
-/* line 51, ../sass/screen.scss */
-#main {
-  float: left;
+/* line 14, ../sass/_layout.scss */
+#menu {
   width: 100%;
+  background: red;
+}
+
+/* line 20, ../sass/_layout.scss */
+#main .main-content {
+  float: left;
+  width: 75%;
   margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: both;
+}
+/* line 24, ../sass/_layout.scss */
+#main .main-aside {
+  float: left;
+  width: 25%;
+  margin-left: 75%;
   margin-right: -100%;
   padding-left: 5px;
   padding-right: 5px;
@@ -101,14 +123,16 @@ body {
   word-wrap: break-word;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 29, ../sass/_layout.scss */
 #footer {
-  background: #003366;
-  color: white;
+  clear: left;
+}
+/* line 31, ../sass/_layout.scss */
+#footer .footer-block-1 {
   float: left;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: -75%;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
   padding-left: 5px;
   padding-right: 5px;
   -moz-box-sizing: border-box;
@@ -116,4 +140,61 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
+}
+/* line 34, ../sass/_layout.scss */
+#footer .footer-block-2 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+/* line 37, ../sass/_layout.scss */
+#footer .footer-block-3 {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/**
+ *  Colours
+ **/
+/**
+ *  Mixins
+ **/
+/**
+ *  Fonts
+ **/
+/* line 43, ../sass/screen.scss */
+html {
+  background: #003366;
+}
+
+/* line 46, ../sass/screen.scss */
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* line 50, ../sass/screen.scss */
+#page-wrapper {
+  background: #003366;
+}
+
+/* line 54, ../sass/screen.scss */
+#main-wrapper {
+  background: #fff773;
 }
