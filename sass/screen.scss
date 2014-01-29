@@ -16,9 +16,10 @@
 
 $black:     #000;       // standard black
 $white:     #fff;       // standard white
-$blue:      #003366;    // the main blue
-$yellow:    #FFF10D;    // the main yellow
-$bg:        lighten($blue, 60%); // main background colour
+$col1:      #002F2F;    // beige
+$col2:      #046380;    // blue
+$bg:        #A7A37E;    // main background colour
+$bg2:       darken($bg, 25%);
 
 /**
  *  Mixins
@@ -71,11 +72,11 @@ body {
 }
 
 #main-wrapper {
-  background: $blue;
+  background: $bg2;
 }
 
 #header {
-  background: $yellow;
+  background: $bg2;
   //@include border-radius(1em 1em 0 0);
   h1 {
     color: $bg;
@@ -84,17 +85,23 @@ body {
     text-align: center;
   }
 }
+#menu-wrapper {
+  background: $bg2;
+}
 #menu {
-  background: $yellow;
   border-bottom: 1px solid $white;
   padding: 1em 0;
   .menu-item {
     display: inline-block;
-    padding: 0 1rem;
+   // padding: 0 1rem;
     a {
-      color: $blue;
+      color: $bg;
       text-decoration: none;
       text-transform: uppercase;
     }
   }
+}
+
+#footer {
+  background: $bg2;
 }
