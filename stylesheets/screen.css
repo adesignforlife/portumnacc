@@ -277,14 +277,15 @@ body {
 /* line 87, ../sass/screen.scss */
 #menu {
   background: #fff10d;
+  border-bottom: 1px solid white;
   padding: 1em 0;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #menu .menu-item {
   display: inline-block;
   padding: 0 1rem;
 }
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #menu .menu-item a {
   color: #003366;
   text-decoration: none;
