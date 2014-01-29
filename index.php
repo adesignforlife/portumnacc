@@ -7,16 +7,22 @@
 </head>
 <body>
   <div id="page-wrapper">
-    <div id="main-wrapper">
+    <div id="header-wrapper">
       <div id="header">
         <p><h1>Portumna Cycling Club</h1></p>
       </div>
-      <div id="menu">
-        <ul>
-          <li class="menu-item"><a href="/">Home</a></li>
-          <li class="menu-item"><a href="#about-us">About Us</a></li>
-          <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
+    </div>
+      <div id="menu-wrapper">
+        <div id="menu-wrapper-inner">
+          <div id="menu">
+            <ul>
+              <li class="menu-item"><a href="/">Home</a></li>
+              <li class="menu-item"><a href="#about-us">About Us</a></li>
+              <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
+          </div>
+        </div>
       </div>
+    <div id="main-wrapper">
       <div id ="slider">
         <p>Let's put a jQuery slider in here.</p>
       </div>
@@ -42,6 +48,7 @@
           <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
         </div>
       </div>
+      <div id="footer-wrapper">
       <div id="footer">
         <div class="footer-block-1">
           <p>This site was created by <a href="http://www.mark.ie">Mark Conroy</a></p>
@@ -52,6 +59,7 @@
         <div class="footer-block-3">
           <p>This site was created by <a href="http://www.mark.ie">Mark Conroy</a></p>
         </div>
+      </div>
       </div>
     </div>
   </div>
