@@ -254,21 +254,20 @@ body {
 
 /* line 91, ../sass/screen.scss */
 #menu {
-  border-bottom: 1px solid white;
   padding: 1em 0;
 }
-/* line 94, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #menu .menu-item {
   display: inline-block;
 }
-/* line 97, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #menu .menu-item a {
   color: #a7a37e;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #footer {
   background: #625f43;
 }
