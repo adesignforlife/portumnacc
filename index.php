@@ -17,8 +17,8 @@
           <div id="menu">
             <ul>
               <li class="menu-item-1"><a href="index.php">Home</a></li>
-              <li class="menu-item-2"><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#about-us">About Us</a></li>
-              <li class="menu-item-3"><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contact-us">Contact Us</a></li>
+              <li class="menu-item-2"><a data-scroll data-speed="700" data-easing="easeInOutCubic" data-url="false" href="#about-us">About Us</a></li>
+              <li class="menu-item-3"><a data-scroll data-speed="700" data-easing="easeInOutCubic" data-url="false" href="#contact-us">Contact Us</a></li>
           </div>
         </div>
       </div>
