@@ -16,9 +16,9 @@
         <div id="menu-wrapper-inner">
           <div id="menu">
             <ul>
-              <li class="menu-item"><a href="/">Home</a></li>
-              <li class="menu-item"><a href="#about-us">About Us</a></li>
-              <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
+              <li class="menu-item-1"><a href="/">Home</a></li>
+              <li class="menu-item-2"><a href="#about-us">About Us</a></li>
+              <li class="menu-item-3"><a href="#contact-us">Contact Us</a></li>
           </div>
         </div>
       </div>
@@ -48,20 +48,13 @@
           <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
         </div>
       </div>
-      <div id="footer-wrapper">
+    </div>
+    <div id="footer-wrapper">
       <div id="footer">
         <div class="footer-block-1">
           <p>This site was created by <a href="http://www.mark.ie">Mark Conroy</a></p>
         </div>
-        <div class="footer-block-2">
-          <p>This site was created by <a href="http://www.mark.ie">Mark Conroy</a></p>
-        </div>
-        <div class="footer-block-3">
-          <p>This site was created by <a href="http://www.mark.ie">Mark Conroy</a></p>
-        </div>
       </div>
-      </div>
-    </div>
   </div>
 </body>
 </html>

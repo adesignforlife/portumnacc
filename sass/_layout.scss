@@ -3,7 +3,7 @@
  **/
 
 $zen-column-count: 12;
-$zen-gutter-width: 10px;
+$zen-gutter-width: 20px;
 
 #main-wrapper {
   max-width: 960px;
@@ -17,7 +17,8 @@ $zen-gutter-width: 10px;
 
 #menu-wrapper {}
 #menu-wrapper-inner,
-#header-wrapper {
+#header-wrapper,
+#footer-wrapper {
   max-width: 960px;
   margin: 0 auto;
   @include zen-grid-container;
@@ -39,15 +40,9 @@ $zen-gutter-width: 10px;
   }
 }
 #footer {
-  @include zen-clear();
+ // @include zen-clear();
   @include zen-grid-item (6,1);
   .footer-block-1 {
-   // @include zen-grid-item(4,1);
-  }
-  .footer-block-2 {
-  //  @include zen-grid-item(4,5);
-  }
-  .footer-block-3 {
-  //  @include zen-grid-item(4,9);
+   @include zen-grid-item(10,2);
   }
 }

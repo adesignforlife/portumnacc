@@ -14,7 +14,7 @@
  *  Colours
  **/
 
-$black:     #000;       // standard black
+$black:     #222;       // custom black
 $white:     #fff;       // standard white
 $col1:      #002F2F;    // beige
 $col2:      #046380;    // blue
@@ -24,6 +24,29 @@ $bg2:       darken($bg, 25%);
 /**
  *  Mixins
  **/
+
+// Menu Items - general
+@mixin menu-item {
+  display: inline-block;
+  a {
+    @include border-radius(5px);
+    background: $black;
+    color: $bg;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:focus,
+    &:hover {
+      background: $bg;
+      color: $black;
+    }
+  }
+}
+
+// Menu Margins - used to position all menu items, except menu 1
+@mixin menu-margin {
+  margin-right: 76px;
+}
 
 /**
  *  Fonts
@@ -52,6 +75,7 @@ html {
 }
 h1 {
   font-family: $bowlby;
+
 }
 h2,
 h3,
@@ -71,35 +95,72 @@ body {
   margin-top: 1em;
 }
 
-#main-wrapper {
-  background: $bg2;
-}
-
 #header {
+  @include border-radius(10px 10px 0 0);
   background: $bg2;
-  //@include border-radius(1em 1em 0 0);
+  border-top: 2px solid $black;
+  border-left: 2px solid $black;
+  border-right: 2px solid $black;
   h1 {
     color: $bg;
     font-size: 3.8rem;
     text-transform: uppercase;
-    text-align: center;
-  }
-}
-#menu-wrapper {
-  background: $bg2;
-}
-#menu {
-  padding: 1em 0;
-  .menu-item {
-    display: inline-block;
-    a {
-      color: $bg;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
+    text-align: right;
   }
 }
 
-#footer {
+#menu-wrapper {
   background: $bg2;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
+  margin-top: -2px;
+}
+
+#menu {
+  padding: 1em 0;
+  .menu-item-1 {
+    @include menu-item;
+    @include menu-margin;
+  }
+  .menu-item-2 {
+    @include menu-item;
+    @include menu-margin;
+  }
+  .menu-item-3 {
+    @include menu-item;
+  }
+}
+
+#main-wrapper {
+  @include border-radius(0 0 10px 0);
+  background: $bg2;
+  border-bottom: 2px solid $black;
+  border-left: 2px solid $black;
+  border-right: 2px solid $black;
+  margin-top: -2px;
+  padding-bottom: 1em;
+}
+
+.main-aside {
+  @include border-radius(10px 0 0 10px);
+  background: $black;
+  padding: 1em;
+}
+
+#footer-wrapper {
+  margin-bottom: 1em;
+}
+
+#footer {
+  @include border-radius(0 0 10px 10px);
+  background: $bg2;
+  border-bottom: 2px solid $black;
+  border-left: 2px solid $black;
+  border-right: 2px solid $black;
+  margin: -2px 0 0 -2px;
+  .footer-block-1 {
+    @include border-radius(10px 10px 0 0);
+    background: $black;
+    padding: 1em;
+  }
 }
