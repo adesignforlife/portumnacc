@@ -45,7 +45,7 @@ $bg2:       darken($bg, 25%);
 
 // Menu Margins - used to position all menu items, except menu 1
 @mixin menu-margin {
-  margin-right: 28px;
+  margin-right: 18px;
 }
 
 /**
@@ -102,7 +102,7 @@ body {
   border-right: 2px solid $black;
   h1 {
     color: $bg;
-    font-size: 3.8rem;
+    font-size: 4.418rem;
     text-transform: uppercase;
     text-align: right;
     &:focus,
@@ -124,6 +124,7 @@ body {
   .menu-item-1 {
     @include menu-item;
     @include menu-margin;
+    margin-left: 10px;
   }
   .menu-item-2 {
     @include menu-item;
