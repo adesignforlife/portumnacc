@@ -166,5 +166,6 @@ body {
     @include border-radius(10px 10px 0 0);
     background: $black;
     padding: 1em;
+    text-align: center;
   }
 }
